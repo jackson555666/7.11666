@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 755831415}
   - component: {fileID: 755831414}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: game title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 1331867075}
   - component: {fileID: 1331867074}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: picture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -738,7 +738,7 @@ GameObject:
   - component: {fileID: 1448869323}
   - component: {fileID: 1448869322}
   m_Layer: 5
-  m_Name: Button
+  m_Name: start button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -859,7 +859,7 @@ GameObject:
   - component: {fileID: 2010883771}
   - component: {fileID: 2010883770}
   m_Layer: 5
-  m_Name: Image
+  m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
