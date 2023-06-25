@@ -637,6 +637,7 @@ GameObject:
   - component: {fileID: 390059217}
   - component: {fileID: 390059216}
   - component: {fileID: 390059215}
+  - component: {fileID: 390059218}
   m_Layer: 0
   m_Name: Start button
   m_TagString: Untagged
@@ -709,7 +710,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 390059216}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 390059218}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: SceneChanging
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &390059216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,6 +761,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390059213}
   m_CullTransparentMesh: 1
+--- !u!114 &390059218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390059213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed6e0f618390d741aac919be99a4465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: InGame
 --- !u!1 &470012581
 GameObject:
   m_ObjectHideFlags: 0
