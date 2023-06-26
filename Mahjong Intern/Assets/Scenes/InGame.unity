@@ -1021,7 +1021,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 295121982}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1762038343}
+        m_TargetAssemblyTypeName: SettingData, Assembly-CSharp
+        m_MethodName: ChangeBGColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 295121982}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &295121982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3184,7 +3196,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1116677423}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1762038343}
+        m_TargetAssemblyTypeName: SettingData, Assembly-CSharp
+        m_MethodName: ChangeBGColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1116677423}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1116677423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3676,7 +3700,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1195682339}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1762038343}
+        m_TargetAssemblyTypeName: SettingData, Assembly-CSharp
+        m_MethodName: ChangeBGColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1195682339}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1195682339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4418,6 +4454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdc21831eb1ec06409f354bf5599ed08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgImage: {fileID: 0}
   resolutionDropdown: {fileID: 0}
 --- !u!1 &1482710872
 GameObject:
@@ -5132,7 +5169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 600 x 400
+  m_text: 600x400
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -5634,6 +5671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdc21831eb1ec06409f354bf5599ed08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgImage: {fileID: 1900531939}
   resolutionDropdown: {fileID: 0}
 --- !u!1 &1821315177
 GameObject:
@@ -6073,6 +6111,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1900531939 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 702278992964918314, guid: 05f549b2f9d8cb846ad3e81ad3f8c6c7, type: 3}
+  m_PrefabInstance: {fileID: 702278991915133996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1900881022
 GameObject:
   m_ObjectHideFlags: 0
@@ -7175,6 +7224,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2116682306}
     m_Modifications:
+    - target: {fileID: 702278992964918309, guid: 05f549b2f9d8cb846ad3e81ad3f8c6c7, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 702278992964918312, guid: 05f549b2f9d8cb846ad3e81ad3f8c6c7, type: 3}
       propertyPath: m_Name
       value: Background(Green)

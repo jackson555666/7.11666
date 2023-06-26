@@ -6,6 +6,8 @@ using UnityEngine.Audio;
 
 public class SettingData : MonoBehaviour
 {
+    [SerializeField] Image bgImage;
+
     private void Awake()
     {
         //Carry object to other scenes
@@ -58,8 +60,8 @@ public class SettingData : MonoBehaviour
         Screen.fullScreen = isFullscreen;   //Set fullscreen
     }
 
-    //public void changeNavyBlue()
-    //{
-    //    changeBackgroundcolor.color = new Color32(21, 34 ,56,255);
-    //}
+    public void ChangeBGColor(Image buttonColor)
+    {
+        bgImage.color = buttonColor.color;
+    }
 }
