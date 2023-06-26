@@ -18,7 +18,7 @@ public class SettingData : MonoBehaviour
     Resolution[] resolutions;
 
     //Start is called before first frame update
-    void start()
+    void Start()
     {
         //Setting variables
         resolutions = Screen.resolutions;
