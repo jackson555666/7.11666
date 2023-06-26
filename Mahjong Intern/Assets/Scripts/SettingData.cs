@@ -7,6 +7,7 @@ using UnityEngine.Audio;
 public class SettingData : MonoBehaviour
 {
     [SerializeField] Image bgImage;
+    [SerializeField] Image bgSetting;
 
     private void Awake()
     {
@@ -62,6 +63,13 @@ public class SettingData : MonoBehaviour
 
     public void ChangeBGColor(Image buttonColor)
     {
-        bgImage.color = buttonColor.color;
+        bgImage.color = buttonColor.color;//change BG color to color of the setting button
+        ChangeSettingBGColor(buttonColor.color);//also change the setting window BG color to the same tone but brighter
+    }
+
+    public void ChangeSettingBGColor(Color newColor)
+    {
+        //add two colors to make a brighter color
+        bgSetting.color = new Color(0.15f, 0.15f, 0.15f) + newColor;
     }
 }
