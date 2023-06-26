@@ -6,6 +6,8 @@ using UnityEngine.Audio;
 
 public class SettingData : MonoBehaviour
 {
+    Color savedColor;
+
     [SerializeField] Image bgImage;
     [SerializeField] Image bgSetting;
 
@@ -13,6 +15,11 @@ public class SettingData : MonoBehaviour
     {
         //Carry object to other scenes
         DontDestroyOnLoad(this.gameObject);
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        //this will run everytime the scene start
     }
 
     //public Image changeBackgroundcolor;
@@ -63,6 +70,7 @@ public class SettingData : MonoBehaviour
 
     public void ChangeBGColor(Image buttonColor)
     {
+        savedColor = buttonColor.color;
         bgImage.color = buttonColor.color;//change BG color to color of the setting button
         ChangeSettingBGColor(buttonColor.color);//also change the setting window BG color to the same tone but brighter
     }
