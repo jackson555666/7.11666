@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using TMPro;
 
 public class SettingData : MonoBehaviour
 {
-    Color savedColor;
-
-    [SerializeField] Image bgImage;
-    [SerializeField] Image bgSetting;
+    public static SettingData instance;
+    public Image bgImage;
+    public Image bgSetting;
+    public Color savedColor;
 
     private void Awake()
     {
@@ -17,13 +18,13 @@ public class SettingData : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-    private void OnLevelWasLoaded(int level)
+    private void OnLevelWasLoaded()
     {
-        //this will run everytime the scene start
+
     }
 
     //public Image changeBackgroundcolor;
-    public Dropdown resolutionDropdown;
+    public TMP_Dropdown resolutionDropdown;
 
     Resolution[] resolutions;
 
@@ -41,7 +42,7 @@ public class SettingData : MonoBehaviour
         int currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
         {
-            string option = resolutions[i].width + "x" + resolutions[i].height;
+            string option = resolutions[i].width + " x " + resolutions[i].height;
             options.Add(option);
 
             if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
@@ -53,6 +54,25 @@ public class SettingData : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+        bgImage = GameObject.Find("Background").GetComponent<Image>();
+        bgSetting = GameObject.Find("SettingsWindow").GetComponent<Image>();
+    }
+
+    
+
+    public void ChangeBGColor(Image buttonColor)
+    {
+        bgImage = GameObject.Find("Background").GetComponent<Image>();
+        bgSetting = GameObject.Find("SettingsWindow").GetComponent<Image>();
+        savedColor = buttonColor.color;
+        bgImage.color = savedColor;  //change BG color to color of the setting button
+        ChangeSettingBGColor(buttonColor.color);    //also change the setting window BG color to the same tone but brighter
+    }
+
+    public void ChangeSettingBGColor(Color newColor)
+    {
+        //add two colors to make a brighter color
+        bgSetting.color = new Color(0.15f, 0.15f, 0.15f) + newColor;
     }
 
     //Set resolution
@@ -68,16 +88,4 @@ public class SettingData : MonoBehaviour
         Screen.fullScreen = isFullscreen;   //Set fullscreen
     }
 
-    public void ChangeBGColor(Image buttonColor)
-    {
-        savedColor = buttonColor.color;
-        bgImage.color = buttonColor.color;//change BG color to color of the setting button
-        ChangeSettingBGColor(buttonColor.color);//also change the setting window BG color to the same tone but brighter
-    }
-
-    public void ChangeSettingBGColor(Color newColor)
-    {
-        //add two colors to make a brighter color
-        bgSetting.color = new Color(0.15f, 0.15f, 0.15f) + newColor;
-    }
 }
