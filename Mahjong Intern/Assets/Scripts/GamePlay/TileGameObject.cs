@@ -14,6 +14,8 @@ public class TileGameObject : MonoBehaviour
     //run when select a tile. Assigned to tileObject's button.
     public void SelectThisTile()
     {
+        SoundManager.Instance.PlaySoundFromList(SoundNameEnum.tileClick);
+
         if (!isSelected)
         {
             isSelected = true;
