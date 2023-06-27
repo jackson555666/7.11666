@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using TMPro;
+using UnityEditor.PackageManager;
+using System;
 
 public class SettingData : MonoBehaviour
 {
@@ -35,7 +37,8 @@ public class SettingData : MonoBehaviour
         resolutions = Screen.resolutions;
 
         //Clear resolution dropdown options
-        resolutionDropdown.ClearOptions();
+        if(resolutionDropdown != null )
+            resolutionDropdown.ClearOptions();
 
         List<string> options = new List<string>();
 
@@ -54,11 +57,23 @@ public class SettingData : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
-        bgImage = GameObject.Find("Background").GetComponent<Image>();
-        bgSetting = GameObject.Find("SettingsWindow").GetComponent<Image>();
+
+        //bgImage = GameObject.Find("Background").GetComponent<Image>();
+        //bgSetting = GameObject.Find("SettingsWindow").GetComponent<Image>();
+
+        //if we not sure it gonna find the game object everytime, try check != null or use "try" for safety
+        try
+        {
+            bgImage = GameObject.Find("Background").GetComponent<Image>();
+            bgSetting = GameObject.Find("SettingsWindow").GetComponent<Image>();
+        }
+        catch(Exception e)
+        {
+            Debug.Log(e.ToString());
+        }
     }
 
-    
+
 
     public void ChangeBGColor(Image buttonColor)
     {
