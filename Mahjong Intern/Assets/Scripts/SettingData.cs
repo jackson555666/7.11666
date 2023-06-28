@@ -13,16 +13,33 @@ public class SettingData : MonoBehaviour
     public Image bgImage;
     public Image bgSetting;
     public Color savedColor;
+    private bool flag = false;
+
 
     private void Awake()
     {
-        //Carry object to other scenes
-        DontDestroyOnLoad(this.gameObject);
+        if (flag != true)
+        {
+            if (instance == null && instance != this)
+            {
+                instance = this;
+                //Carry object to other scenes
+                DontDestroyOnLoad(this.gameObject);
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnLevelWasLoaded()
     {
-
+        flag = true;
     }
 
     //public Image changeBackgroundcolor;
