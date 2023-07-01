@@ -7,9 +7,14 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public bool isMockingGame;
+
     TileGameObject selectedTile;
     public GameObject discardPile;
 
+    public List<TileObject> DrawPileList = new List<TileObject>();
+    public List<TileObject> TempDrawPileList = new List<TileObject>();
+    public List<TileObject> MockDrawPileList = new List<TileObject>();
     public List<TileGameObject> discardTileList = new List<TileGameObject>();   
 
     public float timeLeft = 30.0f;  //assign float "timeLeft" as 30.0
@@ -34,7 +39,46 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        ShuffleThePile();
         TimerOn = true;     //On Timer countdown
+    }
+
+    void ShuffleThePile()
+    {
+        if(isMockingGame)
+        {
+            //TODO: give tiles to player from mocking pile
+        }
+        else
+        {
+            List<int> usedIndex = new List<int>();
+
+
+            foreach(TileObject tileObj in DrawPileList)
+            {
+                bool isIndexEmpty = true;
+                int randomIndex;
+
+                do
+                {
+                    randomIndex = Random.Range(0, DrawPileList.Count);
+
+                    if (!usedIndex.Contains(randomIndex))
+                    {
+                        TempDrawPileList[randomIndex] = tileObj;
+                        usedIndex.Add(randomIndex);
+                        isIndexEmpty = true;
+                    }
+                    else
+                        isIndexEmpty = false;
+                }
+                while (!isIndexEmpty);
+            }
+
+            DrawPileList = TempDrawPileList;
+        }
+
+        Debug.Log("Done Shuffling");
     }
 
     public void DiscardATile()

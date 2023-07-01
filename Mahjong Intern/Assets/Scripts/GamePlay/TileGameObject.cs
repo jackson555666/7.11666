@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class TileGameObject : MonoBehaviour 
 {
@@ -40,10 +41,12 @@ public class TileGameObject : MonoBehaviour
 
 }
 
+[Serializable]
 public class TileObject
 {
     public TileType tileType;
     public int tileNumber;
+    public Sprite tileSprite;
 
     public TileObject(TileType tileType, int tileNumber)
     {
@@ -56,5 +59,7 @@ public enum TileType
 {
     Dot,
     Bamboo,
-    Number
+    Symbol,
+    Number,
+    Intrument
 }

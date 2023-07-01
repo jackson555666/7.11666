@@ -671,7 +671,119 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0ac9454b6885d4399fe9f19a09f03f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMockingGame: 0
   discardPile: {fileID: 1482710872}
+  DrawPileList:
+  - tileType: 0
+    tileNumber: 1
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 2
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 3
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 4
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 5
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 6
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 7
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 8
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 9
+    tileSprite: {fileID: 0}
+  - tileType: 1
+    tileNumber: 1
+    tileSprite: {fileID: 0}
+  - tileType: 1
+    tileNumber: 2
+    tileSprite: {fileID: 0}
+  - tileType: 1
+    tileNumber: 3
+    tileSprite: {fileID: 0}
+  - tileType: 1
+    tileNumber: 4
+    tileSprite: {fileID: 0}
+  - tileType: 1
+    tileNumber: 5
+    tileSprite: {fileID: 0}
+  - tileType: 1
+    tileNumber: 6
+    tileSprite: {fileID: 0}
+  - tileType: 1
+    tileNumber: 7
+    tileSprite: {fileID: 0}
+  - tileType: 1
+    tileNumber: 8
+    tileSprite: {fileID: 0}
+  - tileType: 1
+    tileNumber: 9
+    tileSprite: {fileID: 0}
+  TempDrawPileList:
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  - tileType: 0
+    tileNumber: 0
+    tileSprite: {fileID: 0}
+  MockDrawPileList: []
   discardTileList: []
   timeLeft: 30
   TimerText: {fileID: 270244330}
