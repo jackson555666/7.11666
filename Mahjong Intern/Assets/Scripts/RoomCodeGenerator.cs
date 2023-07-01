@@ -9,6 +9,9 @@ public class RoomCodeGenerator : MonoBehaviour
 
     private void Start()
     {
+        if (SettingData.instance != null && !string.IsNullOrEmpty(SettingData.instance.roomCodeData))
+            return;
+
         CreateRandomCode();
     }
 

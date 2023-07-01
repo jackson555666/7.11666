@@ -26,7 +26,7 @@ public class Lobbycode : MonoBehaviour
         GameObject codetext = GameObject.Find("TextRoomCode");
 
         //check if found the TextRoomCode object and check if we input any code from Start scene
-        if (codetext != null && !string.IsNullOrEmpty(codeInputField.text))
+        if (codetext != null && !string.IsNullOrEmpty(inputdata))
         {
             codetext.GetComponent<TextMeshProUGUI>().text = "Room code: " + inputdata;
         }

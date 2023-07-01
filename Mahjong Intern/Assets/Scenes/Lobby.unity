@@ -1340,6 +1340,7 @@ GameObject:
   - component: {fileID: 836854554}
   - component: {fileID: 836854553}
   - component: {fileID: 836854552}
+  - component: {fileID: 836854556}
   m_Layer: 0
   m_Name: UI Canvas
   m_TagString: Untagged
@@ -1437,6 +1438,96 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &836854556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836854551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6219201013e24a42b351318c7c91d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgImage: {fileID: 899489185}
+  bgSettingPanel: {fileID: 0}
+  codeInputField: {fileID: 0}
+  currentRoomCodeText: {fileID: 194618988}
+  resolutionDropdown: {fileID: 0}
+--- !u!1001 &860541746
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5072198957087469748, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: savedColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469748, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: savedColor.b
+      value: 0.45098042
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469748, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: savedColor.g
+      value: 0.86666673
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469748, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: savedColor.r
+      value: 0.3372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072198957087469750, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
+      propertyPath: m_Name
+      value: SettingData
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
 --- !u!1 &899489183
 GameObject:
   m_ObjectHideFlags: 0
