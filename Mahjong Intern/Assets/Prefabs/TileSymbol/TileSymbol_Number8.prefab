@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 29c5f8699d253fe45a490782ee7effc6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7df165d95a3bc844c8a67904347f19e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -169,24 +169,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4481931453967760362, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 212.112
+      value: 193.9672
       objectReference: {fileID: 0}
     - target: {fileID: 4481931453967760362, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 189.7935
+      value: 177.697
       objectReference: {fileID: 0}
     - target: {fileID: 4481931453967760362, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4481931453967760362, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -9.3517
+      value: -15.4
       objectReference: {fileID: 0}
     - target: {fileID: 7442473306968169528, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: cc76bc1f71b1c364d8dc1f9365d54819, type: 3}
+      objectReference: {fileID: 21300000, guid: 340794491ecf0d34787b3be0e433d638, type: 3}
     - target: {fileID: 7442473306968169528, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
