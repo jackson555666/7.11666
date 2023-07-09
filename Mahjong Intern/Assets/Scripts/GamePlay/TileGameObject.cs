@@ -44,11 +44,11 @@ public class TileGameObject : MonoBehaviour
     //highlight which tile is selected
     public void MoveTileUp()
     {
-        TileGraphic.transform.position = new Vector2(TileGraphic.transform.position.x, TileGraphic.transform.position.y + 20);
+        TileGraphic.transform.position = new Vector2(TileGraphic.transform.position.x, TileGraphic.transform.position.y + 70);
     }
     public void MoveTileDown()
     {
-        TileGraphic.transform.position = new Vector2(TileGraphic.transform.position.x, TileGraphic.transform.position.y - 20);
+        TileGraphic.transform.position = new Vector2(TileGraphic.transform.position.x, TileGraphic.transform.position.y - 70);
     }
 
 }
