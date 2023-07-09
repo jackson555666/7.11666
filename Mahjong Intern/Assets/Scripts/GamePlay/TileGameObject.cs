@@ -46,7 +46,8 @@ public class TileObject
 {
     public TileType tileType;
     public int tileNumber;
-    public Sprite tileSprite;
+    public TileDirection direction;
+    public GameObject tileSymbol;
 
     public TileObject(TileType tileType, int tileNumber)
     {
@@ -59,9 +60,17 @@ public enum TileType
 {
     Elephant,
     Flower,
-    Direction,
     Number,
+    Direction,
     Tuktuk,
     Mango,
     Mangosteen
+}
+
+public enum TileDirection
+{
+    Up,
+    Down,
+    Left,
+    Right
 }
