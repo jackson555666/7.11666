@@ -9,7 +9,7 @@ public class TileGameObject : MonoBehaviour
 {
     TileObject tileObject;
     [SerializeField] GameObject TileGraphic;
-    public TextMeshProUGUI tileSymbolText;
+    public GameObject tileSymbol;
     [SerializeField] bool isSelected;
 
     //run when select a tile. Assigned to tileObject's button.
