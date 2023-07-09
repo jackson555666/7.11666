@@ -9,8 +9,11 @@ public class GameManager : MonoBehaviour
 {
     public bool isMockingGame;
 
+    [SerializeField] GameObject tileObjectPrefab;
+
     TileGameObject selectedTile;
     public GameObject discardPile;
+    [SerializeField] GameObject localPlayerHand;
 
     public List<TileObject> DrawPileList = new List<TileObject>();
     public List<TileObject> TempDrawPileList = new List<TileObject>();
@@ -41,6 +44,8 @@ public class GameManager : MonoBehaviour
     {
         ShuffleThePile();
         TimerOn = true;     //On Timer countdown
+
+        GivePlayerTiles();//give main player tiles
     }
 
     void ShuffleThePile()
@@ -79,6 +84,25 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log("Done Shuffling");
+    }
+
+    void GivePlayerTiles()
+    {
+        int randomNumber;//for random index of tile in DrawPileList
+
+        for (int i = 0;i<13;i++)
+        {
+            randomNumber = Random.Range(0, DrawPileList.Count);//random index from DrawPileList
+            TileObject newTileObject = DrawPileList[randomNumber];//get the tileObject at specific index
+
+            //create a new tile game object in the scene. and get TileGameObject component so we can use its function later
+            TileGameObject newTile = Instantiate(tileObjectPrefab.GetComponent<TileGameObject>(),localPlayerHand.transform);
+            //use TileGameObject function in newTile
+            newTile.SetupTile(newTileObject);
+
+            //remove the tile from DrawPileList
+            DrawPileList.Remove(DrawPileList[randomNumber]);
+        }
     }
 
     public void DiscardATile()

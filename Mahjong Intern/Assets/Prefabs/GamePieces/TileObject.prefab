@@ -193,8 +193,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa4a10e64d940048a4c095d49235159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileObject:
+    tileType: 0
+    tileNumber: 0
+    direction: 0
+    tileSymbol: {fileID: 0}
   TileGraphic: {fileID: 719831266988440473}
-  tileSymbol: {fileID: 0}
+  tileGraphicGroup: {fileID: 3083162670451949219}
   isSelected: 0
 --- !u!1001 &5037620475600574018
 PrefabInstance:
@@ -293,6 +298,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
+--- !u!1 &3083162670451949219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8007577420232157409, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
+  m_PrefabInstance: {fileID: 5037620475600574018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7726721234996216112 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3374301300459231090, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}

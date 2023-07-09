@@ -7,10 +7,22 @@ using UnityEngine.UI;
 
 public class TileGameObject : MonoBehaviour 
 {
-    TileObject tileObject;
+    [SerializeField] TileObject tileObject;
     [SerializeField] GameObject TileGraphic;
-    public GameObject tileSymbol;
+    public GameObject tileGraphicGroup;
     [SerializeField] bool isSelected;
+
+    public void SetupTile(TileObject newTileObject)
+    {
+        this.tileObject.tileType= newTileObject.tileType;
+        this.tileObject.tileSymbol = newTileObject.tileSymbol;
+        this.tileObject.tileNumber = newTileObject.tileNumber;
+        this.tileObject.direction = newTileObject.direction;
+        this.tileObject.tileGameObject = this.gameObject;
+
+        if(newTileObject.tileSymbol != null)
+        Instantiate(newTileObject.tileSymbol, tileGraphicGroup.transform);
+    }
 
     //run when select a tile. Assigned to tileObject's button.
     public void SelectThisTile()
@@ -48,6 +60,7 @@ public class TileObject
     public int tileNumber;
     public TileDirection direction;
     public GameObject tileSymbol;
+    public GameObject tileGameObject;
 
     public TileObject(TileType tileType, int tileNumber)
     {
@@ -58,13 +71,13 @@ public class TileObject
 
 public enum TileType
 {
-    Elephant,
-    Flower,
-    Number,
-    Direction,
-    Tuktuk,
-    Mango,
-    Mangosteen
+    Elephant,//9*4 tiles
+    Flower,//9*4 tiles
+    Number,//9*4 tiles
+    Direction,//4 directions, 4 tiles for each direction, 4 set
+    Tuktuk,//4*4 tiles
+    Mango,//4*4 tiles
+    Mangosteen//4*4 tiles
 }
 
 public enum TileDirection
