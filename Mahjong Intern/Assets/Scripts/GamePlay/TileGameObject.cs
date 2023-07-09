@@ -57,9 +57,11 @@ public class TileObject
 
 public enum TileType
 {
-    Dot,
-    Bamboo,
-    Symbol,
+    Elephant,
+    Flower,
+    Direction,
     Number,
-    Intrument
+    Tuktuk,
+    Mango,
+    Mangosteen
 }
