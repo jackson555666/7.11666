@@ -852,184 +852,169 @@ MonoBehaviour:
     tileSymbol: {fileID: 5615617783937914108, guid: 346d17f024fbdff48ae756545015cf99, type: 3}
     tileGameObject: {fileID: 0}
   - tileType: 0
+    tileNumber: 2
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: fa5ea9a24fb602d449dc6f805f3d7851, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 0
+    tileNumber: 3
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: 1dbf17b70677c7143a7b7428365d027e, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 0
+    tileNumber: 4
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: aeb45a424be1c224b941e104a7b3c9d6, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 0
+    tileNumber: 5
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: 313f98cc92898274d986db0433dced61, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 0
+    tileNumber: 6
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: fbae9e9ac7f955f42912f36af6cebd6e, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 0
+    tileNumber: 7
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: 74dd7bd9e4a2c964f8226517798b5133, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 0
+    tileNumber: 8
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: 2ae8c74cd904e2549b4b156516401aa5, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 0
+    tileNumber: 9
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: 00781c97b63769048a35a673c2c3f93e, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 1
     tileNumber: 1
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 346d17f024fbdff48ae756545015cf99, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: 4968b2e2894035641bdd0b52d404bed7, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
+  - tileType: 1
+    tileNumber: 2
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: 21883adf85a25194b91214047cf26a60, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 1
+    tileNumber: 3
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: 8c012143db715e847a87a95d7a73d071, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 1
+    tileNumber: 4
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: f30ae998c2937d34b82316688d08f877, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 1
+    tileNumber: 5
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: 03efff06aa705024e91cf199c0f5c114, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 1
+    tileNumber: 6
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: d6033bfca14f90f46a770d9fbb0b50ba, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 1
+    tileNumber: 7
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: be2747a0cb974174193cc6d33bdf222b, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 1
+    tileNumber: 8
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: 48288d24601f82f46b1b32008a6c3231, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 1
+    tileNumber: 9
+    direction: 0
+    tileSymbol: {fileID: 5615617783937914108, guid: dc196ac7b811a554793ad94e5deafef1, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 2
     tileNumber: 1
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 346d17f024fbdff48ae756545015cf99, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: 7a6bb9846c7b39342b7864ef55f6d12b, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 1
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 346d17f024fbdff48ae756545015cf99, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
+  - tileType: 2
     tileNumber: 2
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: fa5ea9a24fb602d449dc6f805f3d7851, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: b9cb1f245689af649bf350a6929a2576, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 2
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: fa5ea9a24fb602d449dc6f805f3d7851, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 2
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: fa5ea9a24fb602d449dc6f805f3d7851, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 2
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: fa5ea9a24fb602d449dc6f805f3d7851, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
+  - tileType: 2
     tileNumber: 3
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 1dbf17b70677c7143a7b7428365d027e, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: 41d17633c2884364db7170a805eeb94e, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 3
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 1dbf17b70677c7143a7b7428365d027e, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 3
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 1dbf17b70677c7143a7b7428365d027e, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 3
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 1dbf17b70677c7143a7b7428365d027e, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
+  - tileType: 2
     tileNumber: 4
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: aeb45a424be1c224b941e104a7b3c9d6, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: 95936c868c0cc214aabbc3d5a0be83ad, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 4
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: aeb45a424be1c224b941e104a7b3c9d6, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 4
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: aeb45a424be1c224b941e104a7b3c9d6, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 4
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: aeb45a424be1c224b941e104a7b3c9d6, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
+  - tileType: 2
     tileNumber: 5
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 313f98cc92898274d986db0433dced61, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: 3eb30c9d87013014db64a287f1499845, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 5
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 313f98cc92898274d986db0433dced61, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 5
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 313f98cc92898274d986db0433dced61, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 5
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 313f98cc92898274d986db0433dced61, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
+  - tileType: 2
     tileNumber: 6
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: fbae9e9ac7f955f42912f36af6cebd6e, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: 364b86c027001434ca9a34ba2d6c7fc0, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 6
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: fbae9e9ac7f955f42912f36af6cebd6e, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 6
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: fbae9e9ac7f955f42912f36af6cebd6e, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 6
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: fbae9e9ac7f955f42912f36af6cebd6e, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
+  - tileType: 2
     tileNumber: 7
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 74dd7bd9e4a2c964f8226517798b5133, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: 4c3624328a03ad14ea786fd0041ee4ef, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 7
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 74dd7bd9e4a2c964f8226517798b5133, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 7
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 74dd7bd9e4a2c964f8226517798b5133, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 7
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 74dd7bd9e4a2c964f8226517798b5133, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
+  - tileType: 2
     tileNumber: 8
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 2ae8c74cd904e2549b4b156516401aa5, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: be5e2cf29fa9d3d459b41844f7ea4f30, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 8
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 2ae8c74cd904e2549b4b156516401aa5, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 8
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 2ae8c74cd904e2549b4b156516401aa5, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 8
-    direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 2ae8c74cd904e2549b4b156516401aa5, type: 3}
-    tileGameObject: {fileID: 0}
-  - tileType: 0
+  - tileType: 2
     tileNumber: 9
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 00781c97b63769048a35a673c2c3f93e, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: 4b4487ecc2e193641a62afacadab1cf9, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 9
+  - tileType: 4
+    tileNumber: 0
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 00781c97b63769048a35a673c2c3f93e, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: e37ff889e2aaf774189250f8235e0786, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 9
+  - tileType: 5
+    tileNumber: 0
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 00781c97b63769048a35a673c2c3f93e, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: feaa76362b8f0e341b637c7804674416, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 9
+  - tileType: 6
+    tileNumber: 0
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 00781c97b63769048a35a673c2c3f93e, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: 2fcd27cf21659214b864444cf4af9e03, type: 3}
     tileGameObject: {fileID: 0}
-  - tileType: 0
-    tileNumber: 9
+  - tileType: 3
+    tileNumber: 0
     direction: 0
-    tileSymbol: {fileID: 5615617783937914108, guid: 00781c97b63769048a35a673c2c3f93e, type: 3}
+    tileSymbol: {fileID: 5615617783937914108, guid: 326e2cb77fa1d0241939eedba7a98ccc, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 3
+    tileNumber: 0
+    direction: 1
+    tileSymbol: {fileID: 5615617783937914108, guid: 96f7f0b2b68808845887727b58c88d82, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 3
+    tileNumber: 0
+    direction: 2
+    tileSymbol: {fileID: 5615617783937914108, guid: f8e487085a5ba214480e6e8e7e70e809, type: 3}
+    tileGameObject: {fileID: 0}
+  - tileType: 3
+    tileNumber: 0
+    direction: 3
+    tileSymbol: {fileID: 5615617783937914108, guid: 7e22a22d2958edd4387a9b71da128304, type: 3}
     tileGameObject: {fileID: 0}
   TempDrawPileList:
   - tileType: 0
