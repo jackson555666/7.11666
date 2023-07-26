@@ -91,9 +91,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7442473306968169528, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8007577420232157409, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
       propertyPath: m_Name
-      value: TileSymbolGroup
+      value: TileSymbol_Elephant1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}

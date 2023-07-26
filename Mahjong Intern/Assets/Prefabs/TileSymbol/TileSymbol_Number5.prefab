@@ -60,7 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -188,12 +188,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 60574b88ade05894999d8904b2fbd514, type: 3}
     - target: {fileID: 7442473306968169528, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442473306968169528, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8007577420232157409, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
       propertyPath: m_Name
-      value: TileSymbol_Number7
+      value: TileSymbol_Number5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
