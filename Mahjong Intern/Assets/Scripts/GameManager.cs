@@ -56,6 +56,12 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            //multiple tiles to 4 set of tiles (136 tiles)
+            for (int i = 0; i < 2; i++)
+            {
+                DrawPileList.AddRange(DrawPileList);
+            }
+
             List<int> usedIndex = new List<int>();
 
 
