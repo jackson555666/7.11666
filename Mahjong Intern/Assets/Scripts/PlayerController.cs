@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] bool isLocalPlayer;
+
     [SerializeField] GameObject playerHand;
     [SerializeField] GameObject tileObjectPrefab;
     public List<TileObject> playerTileList = new List<TileObject>();
@@ -13,12 +15,16 @@ public class PlayerController : MonoBehaviour
 
     public void AddTileToPlayerHand(TileObject newTileData)
     {
-        //create a new tile game object in the scene. and get TileGameObject component so we can use its function later
-        TileGameObject newTileGameObject = Instantiate(tileObjectPrefab.GetComponent<TileGameObject>(), this.transform);
-        //use TileGameObject function in newTile
-        newTileGameObject.SetupTile(newTileData);
-
-        playerTileList.Add(newTileGameObject.tileObject);
+        if (isLocalPlayer)
+        {
+            //create a new tile game object in the scene. and get TileGameObject component so we can use its function later
+            TileGameObject newTileGameObject = Instantiate(tileObjectPrefab.GetComponent<TileGameObject>(), this.transform);
+            //use TileGameObject function in newTile
+            newTileGameObject.SetupTile(newTileData);
+            playerTileList.Add(newTileGameObject.tileObject);
+        }
+        else
+            playerTileList.Add(newTileData);
     }
 
 
@@ -56,8 +62,9 @@ public class PlayerController : MonoBehaviour
             TileObject tempTile = playerTileList[lowestTileIndex];
             playerTileList.RemoveAt(lowestTileIndex);
             playerTileList.Insert(i, tempTile);
-            Debug.Log("has tileGameObject " + playerTileList[i].tileGameObject != null);
-            playerTileList[i].tileGameObject.transform.SetSiblingIndex(i);
+
+            if(isLocalPlayer)
+                playerTileList[i].tileGameObject.transform.SetSiblingIndex(i);
         }
     }
 

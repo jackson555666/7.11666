@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public TileGameObject selectedTile;
     public GameObject discardPile;
     [SerializeField] GameObject localPlayerHand;
-    [SerializeField] PlayerController player1Controller;
+    [SerializeField] List<PlayerController> playerControllers = new List<PlayerController>();
 
     public List<TileObject> DrawPileList = new List<TileObject>();
     public List<TileObject> TempDrawPileList = new List<TileObject>();
@@ -92,41 +92,42 @@ public class GameManager : MonoBehaviour
 
             DrawPileList = TempDrawPileList;
         }
-
-        Debug.Log("Done Shuffling");
     }
 
     void GivePlayerTiles()
     {
         int randomNumber;//for random index of tile in DrawPileList
 
-        for (int i = 0;i<13;i++)
+        for (int l = 0; l < playerControllers.Count; l++)
         {
-            if (isMockingGame)
+            for (int i = 0; i < 13; i++)
             {
-                randomNumber = Random.Range(0, MockDrawPileList.Count);
+                if (isMockingGame)
+                {
+                    randomNumber = Random.Range(0, MockDrawPileList.Count);
 
-                TileObject newTileObject = MockDrawPileList[randomNumber];//get the tileObject at specific index
+                    TileObject newTileObject = MockDrawPileList[randomNumber];//get the tileObject at specific index
 
-                player1Controller.AddTileToPlayerHand(newTileObject);
+                    playerControllers[l].AddTileToPlayerHand(newTileObject);
 
-                //remove the tile from DrawPileList
-                MockDrawPileList.Remove(MockDrawPileList[randomNumber]);
+                    //remove the tile from DrawPileList
+                    MockDrawPileList.Remove(MockDrawPileList[randomNumber]);
+                }
+                else
+                {
+                    randomNumber = Random.Range(0, DrawPileList.Count);//random index from DrawPileList
+
+                    TileObject newTileObject = DrawPileList[randomNumber];//get the tileObject at specific index
+
+                    playerControllers[l].AddTileToPlayerHand(newTileObject);
+
+                    //remove the tile from DrawPileList
+                    DrawPileList.Remove(DrawPileList[randomNumber]);
+                }
             }
-            else
-            {
-                randomNumber = Random.Range(0, DrawPileList.Count);//random index from DrawPileList
 
-                TileObject newTileObject = DrawPileList[randomNumber];//get the tileObject at specific index
-
-                player1Controller.AddTileToPlayerHand(newTileObject);
-
-                //remove the tile from DrawPileList
-                DrawPileList.Remove(DrawPileList[randomNumber]);
-            }
+            playerControllers[l].CheckPlayerHand();
         }
-
-        player1Controller.CheckPlayerHand();
     }
 
     public void DiscardATile()
