@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     {
         if(isMockingGame)
         {
-            //TODO: give tiles to player from mocking pile
+            
         }
         else
         {
@@ -102,14 +102,31 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0;i<13;i++)
         {
-            randomNumber = Random.Range(0, DrawPileList.Count);//random index from DrawPileList
-            TileObject newTileObject = DrawPileList[randomNumber];//get the tileObject at specific index
+            if (isMockingGame)
+            {
+                randomNumber = Random.Range(0, MockDrawPileList.Count);
 
-            player1Controller.AddTileToPlayerHand(newTileObject);
+                TileObject newTileObject = MockDrawPileList[randomNumber];//get the tileObject at specific index
 
-            //remove the tile from DrawPileList
-            DrawPileList.Remove(DrawPileList[randomNumber]);
+                player1Controller.AddTileToPlayerHand(newTileObject);
+
+                //remove the tile from DrawPileList
+                MockDrawPileList.Remove(MockDrawPileList[randomNumber]);
+            }
+            else
+            {
+                randomNumber = Random.Range(0, DrawPileList.Count);//random index from DrawPileList
+
+                TileObject newTileObject = DrawPileList[randomNumber];//get the tileObject at specific index
+
+                player1Controller.AddTileToPlayerHand(newTileObject);
+
+                //remove the tile from DrawPileList
+                DrawPileList.Remove(DrawPileList[randomNumber]);
+            }
         }
+
+        player1Controller.CheckPlayerHand();
     }
 
     public void DiscardATile()

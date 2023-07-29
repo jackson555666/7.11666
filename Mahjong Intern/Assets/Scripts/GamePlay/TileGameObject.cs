@@ -21,7 +21,7 @@ public class TileGameObject : MonoBehaviour
         this.tileObject.tileGameObject = this.gameObject;
 
         if(newTileObject.tileSymbol != null)
-        Instantiate(newTileObject.tileSymbol, tileGraphicGroup.transform);
+        Instantiate(newTileObject.tileSymbol, tileGraphicGroup.transform);//create symbol on the tile
     }
 
     //run when select a tile. Assigned to tileObject's button.

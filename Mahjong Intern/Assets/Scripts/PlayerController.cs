@@ -37,15 +37,17 @@ public class PlayerController : MonoBehaviour
 
     public void SortingTiles()
     {
+        Debug.Log("sorting");
+        
         int lowestTileIndex = 0;
 
-        for(int i = 0;i < playerTileList.Count;i++)
+        for(int i = 0;i < playerTileList.Count - 1;i++)
         {
             lowestTileIndex = i;
 
-            for(int j = 1; j < playerTileList.Count;j++)
+            for(int j = i+1; j < playerTileList.Count;j++)
             {
-                if(!CompareTile(playerTileList[lowestTileIndex], playerTileList[lowestTileIndex + 1]))
+                if(!CompareTile(playerTileList[lowestTileIndex], playerTileList[j]))
                 {
                     lowestTileIndex = j;
                 }
@@ -53,7 +55,9 @@ public class PlayerController : MonoBehaviour
 
             TileObject tempTile = playerTileList[lowestTileIndex];
             playerTileList.RemoveAt(lowestTileIndex);
-            playerTileList.Insert(0, tempTile);
+            playerTileList.Insert(i, tempTile);
+            Debug.Log("has tileGameObject " + playerTileList[i].tileGameObject != null);
+            playerTileList[i].tileGameObject.transform.SetSiblingIndex(i);
         }
     }
 
