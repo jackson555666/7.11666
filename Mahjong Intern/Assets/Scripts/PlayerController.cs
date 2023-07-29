@@ -5,10 +5,22 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] GameObject playerHand;
-    List<TileObject> playerTileList = new List<TileObject>();
+    [SerializeField] GameObject tileObjectPrefab;
+    public List<TileObject> playerTileList = new List<TileObject>();
 
-    TileObject lowestTile;
-    TileObject highestTile;
+    //TileObject lowestTile;
+    //TileObject highestTile;
+
+    public void AddTileToPlayerHand(TileObject newTileData)
+    {
+        //create a new tile game object in the scene. and get TileGameObject component so we can use its function later
+        TileGameObject newTileGameObject = Instantiate(tileObjectPrefab.GetComponent<TileGameObject>(), this.transform);
+        //use TileGameObject function in newTile
+        newTileGameObject.SetupTile(newTileData);
+
+        playerTileList.Add(newTileGameObject.tileObject);
+    }
+
 
     public void CheckPlayerHand()
     {
@@ -16,42 +28,67 @@ public class PlayerController : MonoBehaviour
         //TODO: check player hand combination
         //and if this player hand is complete, let them summit their hand to GameManager
 
-        lowestTile = playerTileList[0];
-        highestTile = playerTileList[playerTileList.Count - 1];
+        //lowestTile = playerTileList[0];
+        //highestTile = playerTileList[playerTileList.Count - 1];
 
-        for(int i = 0;i< playerTileList.Count;i++)
+        SortingTiles();
+        //TODO: check tiles combination
+    }
+
+    public void SortingTiles()
+    {
+        int lowestTileIndex = 0;
+
+        for(int i = 0;i < playerTileList.Count;i++)
         {
-            CompareTile(playerTileList[i]);
+            lowestTileIndex = i;
+
+            for(int j = 1; j < playerTileList.Count;j++)
+            {
+                if(!CompareTile(playerTileList[lowestTileIndex], playerTileList[lowestTileIndex + 1]))
+                {
+                    lowestTileIndex = j;
+                }
+            }
+
+            TileObject tempTile = playerTileList[lowestTileIndex];
+            playerTileList.RemoveAt(lowestTileIndex);
+            playerTileList.Insert(0, tempTile);
         }
     }
 
-    void CompareTile(TileObject tileA)
+    bool CompareTile(TileObject tileA, TileObject tileB)//return true if A < B
     {
-        if(tileA.tileType < lowestTile.tileType)
+        if(tileA.tileType < tileB.tileType)
         {
-            SetToFirst();
+            return true;
         }
-        else if (tileA.tileType > highestTile.tileType)
+        else if (tileA.tileType > tileB.tileType)
         {
-            SetToLast();
+            return false;
         }
-        else if(tileA.tileType == lowestTile.tileType)
+        else if(tileA.tileType == tileB.tileType)
         {
-            if(tileA.tileNumber > 0 && tileA.tileNumber < lowestTile.tileNumber)
+            if(tileA.tileType == TileType.Elephant || tileA.tileType == TileType.Flower || tileA.tileType == TileType.Number)
             {
-
+                if(tileA.tileNumber < tileB.tileNumber)
+                    return true;
+                else
+                    return false;
+            }
+            else if(tileA.tileType == TileType.Direction)
+            {
+                if (tileA.direction < tileB.direction)
+                    return true;
+                else
+                    return false;
+            }
+            else
+            {
+                return true;
             }
         }
 
-        void SetToFirst()
-        {
-            tileA.tileGameObject.transform.SetAsFirstSibling();
-            lowestTile = tileA;
-        }
-        void SetToLast()
-        {
-            tileA.tileGameObject.transform.SetAsLastSibling();
-            highestTile = tileA;
-        }
+        return false;
     }
 }

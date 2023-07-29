@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public TileGameObject selectedTile;
     public GameObject discardPile;
     [SerializeField] GameObject localPlayerHand;
+    [SerializeField] PlayerController player1Controller;
 
     public List<TileObject> DrawPileList = new List<TileObject>();
     public List<TileObject> TempDrawPileList = new List<TileObject>();
@@ -104,10 +105,7 @@ public class GameManager : MonoBehaviour
             randomNumber = Random.Range(0, DrawPileList.Count);//random index from DrawPileList
             TileObject newTileObject = DrawPileList[randomNumber];//get the tileObject at specific index
 
-            //create a new tile game object in the scene. and get TileGameObject component so we can use its function later
-            TileGameObject newTile = Instantiate(tileObjectPrefab.GetComponent<TileGameObject>(),localPlayerHand.transform);
-            //use TileGameObject function in newTile
-            newTile.SetupTile(newTileObject);
+            player1Controller.AddTileToPlayerHand(newTileObject);
 
             //remove the tile from DrawPileList
             DrawPileList.Remove(DrawPileList[randomNumber]);

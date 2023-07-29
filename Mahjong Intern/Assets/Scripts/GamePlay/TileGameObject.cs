@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class TileGameObject : MonoBehaviour 
 {
-    [SerializeField] TileObject tileObject;
+    public TileObject tileObject;
     [SerializeField] GameObject TileGraphic;
     public GameObject tileGraphicGroup;
     [SerializeField] bool isSelected;
