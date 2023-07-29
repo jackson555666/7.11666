@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject tileObjectPrefab;
 
-    TileGameObject selectedTile;
+    public TileGameObject selectedTile;
     public GameObject discardPile;
     [SerializeField] GameObject localPlayerHand;
 
@@ -61,6 +61,9 @@ public class GameManager : MonoBehaviour
             {
                 DrawPileList.AddRange(DrawPileList);
             }
+
+            TempDrawPileList.Clear();
+            TempDrawPileList.AddRange(DrawPileList);
 
             List<int> usedIndex = new List<int>();
 

@@ -48,6 +48,7 @@ public class TileGameObject : MonoBehaviour
     }
     public void MoveTileDown()
     {
+        isSelected = false;
         TileGraphic.transform.position = new Vector2(TileGraphic.transform.position.x, TileGraphic.transform.position.y - 70);
     }
 
