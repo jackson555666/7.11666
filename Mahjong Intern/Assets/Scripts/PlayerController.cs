@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,9 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject playerHand;
     [SerializeField] GameObject tileObjectPrefab;
     public List<TileObject> playerTileList = new List<TileObject>();
-
-    //TileObject lowestTile;
-    //TileObject highestTile;
+    public List<TilesCombination> tilesCombinations = new List<TilesCombination>();
 
     public void AddTileToPlayerHand(TileObject newTileData)
     {
@@ -30,15 +29,10 @@ public class PlayerController : MonoBehaviour
 
     public void CheckPlayerHand()
     {
-        //TODO: sort player tile
+        SortingTiles();
+        CheckTilesCombination();
         //TODO: check player hand combination
         //and if this player hand is complete, let them summit their hand to GameManager
-
-        //lowestTile = playerTileList[0];
-        //highestTile = playerTileList[playerTileList.Count - 1];
-
-        SortingTiles();
-        //TODO: check tiles combination
     }
 
     public void SortingTiles()
@@ -102,4 +96,36 @@ public class PlayerController : MonoBehaviour
 
         return false;
     }
+
+    void CheckTilesCombination()
+    {
+        for(int i = 0; i < playerTileList.Count; i++)
+        {
+            TilesCombination combinationSet = new TilesCombination();
+            combinationSet.tileObjects.Add(playerTileList[i]);
+            tilesCombinations.Add(combinationSet);
+
+            if (i == playerTileList.Count - 1)
+                return;
+
+            for (int j = i+1; j < playerTileList.Count; j++)
+            {
+                if (playerTileList[i].tileType == playerTileList[j].tileType)
+                {
+                    combinationSet.tileObjects.Add(playerTileList[j]);
+                }
+                else
+                {
+                    i += j - 1;
+                    j = playerTileList.Count;
+                }
+            }
+        }
+    }
+}
+
+[Serializable]
+public class TilesCombination
+{
+    public List<TileObject> tileObjects = new List<TileObject>();
 }

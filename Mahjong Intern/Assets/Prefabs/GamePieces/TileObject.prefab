@@ -198,6 +198,7 @@ MonoBehaviour:
     tileNumber: 0
     direction: 0
     tileSymbol: {fileID: 0}
+    tileGameObject: {fileID: 0}
   TileGraphic: {fileID: 719831266988440473}
   tileGraphicGroup: {fileID: 3083162670451949219}
   isSelected: 0
@@ -208,6 +209,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3163746383367194105}
     m_Modifications:
+    - target: {fileID: 3314729612335284440, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3374301300459231090, guid: 15c0982e41e059f46891ec24380c84b1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
