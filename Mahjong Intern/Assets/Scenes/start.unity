@@ -371,8 +371,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -551,15 +551,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5072198957087469748, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
       propertyPath: savedColor.b
-      value: 0.121568635
+      value: 0.1254902
       objectReference: {fileID: 0}
     - target: {fileID: 5072198957087469748, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
       propertyPath: savedColor.g
-      value: 0.121568635
+      value: 0.1882353
       objectReference: {fileID: 0}
     - target: {fileID: 5072198957087469748, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
       propertyPath: savedColor.r
-      value: 0.121568635
+      value: 0.007843138
       objectReference: {fileID: 0}
     - target: {fileID: 5072198957087469749, guid: 3af1f15a4dfbce347a37e0132362ca24, type: 3}
       propertyPath: m_RootOrder
@@ -1723,10 +1723,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
+  m_Color: {r: 0.007843138, g: 0.1882353, b: 0.1254902, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

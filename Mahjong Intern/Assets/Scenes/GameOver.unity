@@ -486,6 +486,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6493059938623760702, guid: 973e6564ac7ea4a4d97946dd6a9290e6, type: 3}
   m_PrefabInstance: {fileID: 875815016}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &875815018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6493059938623760703, guid: 973e6564ac7ea4a4d97946dd6a9290e6, type: 3}
+  m_PrefabInstance: {fileID: 875815016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &930984027
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,11 +731,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100638025}
   m_CullTransparentMesh: 1
---- !u!1 &1348970820 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7512641709219203076, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
-  m_PrefabInstance: {fileID: 7636034217218946808}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1465137325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,6 +1339,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1100638026}
     m_Modifications:
+    - target: {fileID: 99011274390722539, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: 70c4ce8a0b7a51f4395e95fec45902ce, type: 3}
+    - target: {fileID: 99011274390722539, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: 70c4ce8a0b7a51f4395e95fec45902ce, type: 3}
+    - target: {fileID: 99011274390722539, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 99011274390722539, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2087213127816271844, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
       propertyPath: m_Name
       value: Tools bar group 2
@@ -1349,27 +1365,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7512641709219203194, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7512641709219203194, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1348970820}
+      objectReference: {fileID: 875815018}
     - target: {fileID: 7512641709219203194, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 7512641709219203194, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SoundManager, Assembly-CSharp
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7512641709219203194, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8300000, guid: baba95c425b30b849b3f238fdc206f7b, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7512641709219203194, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.AudioClip, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7514871654288982919, guid: 85d260edaf4768848aa397cd22d244af, type: 3}
       propertyPath: m_Pivot.x
